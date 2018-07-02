@@ -22,7 +22,7 @@
 				</ul>
 			</nav>
 		</header>
-		<main>
+		<main class="main-index">
 			<div class="main-image-section">
 				<div class="main-welcome">
 					<span>WELCOME</span>
@@ -35,7 +35,7 @@
 			</div>
 			<section class="intro">
 				<p class="intro-about"><strong>СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ,<br> ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</strong></p>
-				<p class="intro-advantages">РАССМОТРИМ 5 ПРИЧИН ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН</p>
+				<p class="intro-advantages">РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН</p>
 			</section>
 			<section class="adv">
 				<ul class="adv-list">
@@ -44,7 +44,7 @@
 							<div class="adv-head-section">
 								<h2 class="adv-head">Настоящий<br>городок</h2>
 							</div>
-							<span class="adv-numb">1</span>
+							<span class="adv-numb">— №1 —</span>
 							<p class="adv-content">Седона - не атракцион для туристов,<br>там течет своя жизнь</p>
 							<div class="adv-img-wrapper">
 								<img src="#">
@@ -59,7 +59,7 @@
 							<div class="adv-head-section">
 								<h2 class="adv-head">Там есть<br>мост дьявола</h2>
 							</div>
-							<span class="adv-numb">2</span>
+							<span class="adv-numb">— №2 —</span>
 							<p class="adv-content">Да, по нему можно пройти если конечно<br>вы осмелетесь</p>						
 						</div>					
 					</li>
@@ -68,7 +68,7 @@
 							<div class="adv-head-section">
 								<h2 class="adv-head">Небольшая<br>площадь</h2>
 							</div>
-							<span class="adv-numb">3</span>
+							<span class="adv-numb">— №3 —</span>
 							<p class="adv-content">Все достопримечательности<br>находятся очень близко</p>						
 						</div>						
 					</li>
@@ -77,7 +77,7 @@
 							<div class="adv-head-section">
 								<h2 class="adv-head">Красивая<br>дорога</h2>
 							</div>
-							<span class="adv-numb">4</span>
+							<span class="adv-numb">— №4 —</span>
 							<p class="adv-content">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем<br>НЕ СКУЧНО!</p>						
 						</div>						
 					</li>
@@ -86,7 +86,7 @@
 							<div class="adv-head-section"> 
 								<h2 class="adv-head">Мало<br>туристов</h2>
 							</div>
-							<span class="adv-numb">5</span>
+							<span class="adv-numb">— №5 —</span>
 							<p class="adv-content">Большинство едет в гранд каньон и<br> толпится там</p>						
 						</div>						
 					</li>
@@ -95,20 +95,20 @@
 							<ul class="adv-about-city-list">
 								<li>
 									<div class="adv-el-wrapper">
-										<div>Жилье</div>
-										<p class="adv-about-city-content">Рекомендуем пожить в настоящем<br>мотеле, все как в кино!</p>										
+										<h3 class="adv-head">Жилье</h3>
+										<p class="adv-content">Рекомендуем пожить в настоящем<br>мотеле, все как в кино!</p>										
 									</div>
 								</li>
 								<li>
 									<div class="adv-el-wrapper">
-										<div>Еда</div>
-										<p class="adv-about-city-content">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР,<br>Вы НЕ разочаруетесь!</p>										
+										<h3 class="adv-head">Еда</h3>
+										<p class="adv-content">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР,<br>Вы НЕ разочаруетесь!</p>										
 									</div>
 								</li>
 								<li>
 									<div class="adv-el-wrapper">
-										<div>Сувениры</div>
-										<p class="adv-about-city-content">Не только китайского, но и местного<br>производства!</p>								
+										<h3 class="adv-head">Сувениры</h3>
+										<p class="adv-content">Не только китайского, но и местного<br>производства!</p>								
 									</div>
 								</li>
 							</ul>
@@ -121,38 +121,38 @@
 					<h2 class="search-head">Заинтересовались?</h2>
 					<p class="search-content">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
 				</div>
-				<button>Поиск гостиницы в седоне</button>
+				<button class="search-button" type="submit">Поиск гостиницы в седоне</button>
 				<div class="search-pop-up-container">
 					<form class="pop-up-form">
 						<p class="pop-up-check-in">
 							<label class="pop-up-label">
-								ДАТА ЗАЕЗДА
-								<input type="date" name="check-in" id="check-in-date">
+								дата заезда
+								<input type="date" name="check-in" id="check-in-date" value="2018-04-24">
 							</label>
 							<span class="calendar-label"></span>
 						</p>
 						<p class="pop-up-check-out">
 							<label class="pop-up-label">
-								ДАТА ЗАЕЗДА
-								<input type="date" name="check-out" id="check-out-date">
+								дата выезда
+								<input type="date" name="check-out" id="check-out-date" value="2018-06-04">
 							</label>
 							<span class="calendar-label"></span>
 						</p>
 						<p class="pop-up-adult-counter">
-							<label class="pop-up-label">
+							<label class="pop-up-label" for="adult-counter-field">
 								ВЗРОСЛЫЕ
+							</label>
 								<button class="plus-minus-button">-</button>
 								<input type="text" name="adult-counter" id="adult-counter-field">
 								<button class="plus-minus-button">+</button>
-							</label>
 						</p>
 						<p class="pop-up-children-counter">
-							<label class="pop-up-label">
+							<label class="pop-up-label" for="children-counter-field">
 								ДЕТИ
+							</label>
 								<button class="plus-minus-button">-</button>
 								<input type="text" name="children-counter" id="children-counter-field">
 								<button class="plus-minus-button">+</button>
-							</label>
 						</p>
 						<div class="pop-up-submit-button">
 							<input type="submit" name="Find" value="Найти">
@@ -171,7 +171,7 @@
 		<footer>
 			<div class="inner-container">
 				<div class="footer-hashtag">
-					<p>#VISITSEDONA</p>
+					<a href="#">#VISITSEDONA</a>
 				</div>
 				<div class="footer-social">
 					<ul class="footer-social-list">
