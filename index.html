@@ -3,187 +3,167 @@
 	<head>
 		<title>Sedona</title>
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
-		<header class="index-header">
-			<div class="header-logo">
-				<a href="#">
-					<img src="#">
-				</a>			
-			</div>
-
-			<nav class="navigation">
-				<ul class="list-navigation">
-					<li><a href="#">ИНФОРМАЦИЯ</a></li>
-					<li><a href="#">ФОТО И ВИДЕО</a></li>
-					<li><a href="#">КАРТА ШТАТА</a></li>
-					<li><a href="#">ГОСТИНИЦЫ</a></li>
-				</ul>
-			</nav>
-		</header>
-		<main class="main-index">
-			<div class="main-image-section">
-				<div class="main-welcome">
-					<span>WELCOME</span>
-					<span>to the gorgeous</span>
-				</div>
-				<div class="main-name">
-					<h1>SEDONA</h1>
-				</div>
-				<blockquote class="main-quote">Because the Grand Canyon sucks!</blockquote>
-			</div>
-			<section class="intro">
-				<p class="intro-about"><strong>СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ,<br> ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</strong></p>
-				<p class="intro-advantages">РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН</p>
-			</section>
-			<section class="adv">
-				<ul class="adv-list">
-					<li class="adv-with-pict">
-						<div class="adv-section">
-							<div class="adv-head-section">
-								<h2 class="adv-head">Настоящий<br>городок</h2>
-							</div>
-							<span class="adv-numb">— №1 —</span>
-							<p class="adv-content">Седона - не атракцион для туристов,<br>там течет своя жизнь</p>
-							<div class="adv-img-wrapper">
-								<img src="#">
-							</div>
-						</div>
-					</li>
-					<li class="adv-with-pict">
-						<div class="adv-section">
-							<div class="adv-img-wrapper">
-								<img src="#">
-							</div>
-							<div class="adv-head-section">
-								<h2 class="adv-head">Там есть<br>мост дьявола</h2>
-							</div>
-							<span class="adv-numb">— №2 —</span>
-							<p class="adv-content">Да, по нему можно пройти если конечно<br>вы осмелетесь</p>						
-						</div>					
-					</li>
-					<li class="adv-without-pict">
-						<div class="adv-in-line-section">
-							<div class="adv-head-section">
-								<h2 class="adv-head">Небольшая<br>площадь</h2>
-							</div>
-							<span class="adv-numb">— №3 —</span>
-							<p class="adv-content">Все достопримечательности<br>находятся очень близко</p>						
-						</div>						
-					</li>
-					<li class="adv-without-pict">
-						<div class="adv-in-line-section">
-							<div class="adv-head-section">
-								<h2 class="adv-head">Красивая<br>дорога</h2>
-							</div>
-							<span class="adv-numb">— №4 —</span>
-							<p class="adv-content">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем<br>НЕ СКУЧНО!</p>						
-						</div>						
-					</li>
-					<li class="adv-without-pict">
-						<div class="adv-in-line-section">
-							<div class="adv-head-section"> 
-								<h2 class="adv-head">Мало<br>туристов</h2>
-							</div>
-							<span class="adv-numb">— №5 —</span>
-							<p class="adv-content">Большинство едет в гранд каньон и<br> толпится там</p>						
-						</div>						
-					</li>
-					<li class="adv-about-city">
-						<div class="inner-container">
-							<ul class="adv-about-city-list">
-								<li>
-									<div class="adv-el-wrapper">
-										<h3 class="adv-head">Жилье</h3>
-										<p class="adv-content">Рекомендуем пожить в настоящем<br>мотеле, все как в кино!</p>										
-									</div>
-								</li>
-								<li>
-									<div class="adv-el-wrapper">
-										<h3 class="adv-head">Еда</h3>
-										<p class="adv-content">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР,<br>Вы НЕ разочаруетесь!</p>										
-									</div>
-								</li>
-								<li>
-									<div class="adv-el-wrapper">
-										<h3 class="adv-head">Сувениры</h3>
-										<p class="adv-content">Не только китайского, но и местного<br>производства!</p>								
-									</div>
-								</li>
-							</ul>
-						</div>
-					</li>
-				</ul>
-			</section>
-			<section class="search">
-				<div class="search-content-wrapper">
-					<h2 class="search-head">Заинтересовались?</h2>
-					<p class="search-content">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-				</div>
-				<button class="search-button" type="submit">Поиск гостиницы в седоне</button>
-				<div class="search-pop-up-container">
-					<form class="pop-up-form">
-						<p class="pop-up-check-in">
-							<label class="pop-up-label">
-								дата заезда
-								<input type="date" name="check-in" id="check-in-date" value="2018-04-24">
-							</label>
-							<span class="calendar-label"></span>
-						</p>
-						<p class="pop-up-check-out">
-							<label class="pop-up-label">
-								дата выезда
-								<input type="date" name="check-out" id="check-out-date" value="2018-06-04">
-							</label>
-							<span class="calendar-label"></span>
-						</p>
-						<p class="pop-up-adult-counter">
-							<label class="pop-up-label" for="adult-counter-field">
-								ВЗРОСЛЫЕ
-							</label>
-								<button class="plus-minus-button">-</button>
-								<input type="text" name="adult-counter" id="adult-counter-field">
-								<button class="plus-minus-button">+</button>
-						</p>
-						<p class="pop-up-children-counter">
-							<label class="pop-up-label" for="children-counter-field">
-								ДЕТИ
-							</label>
-								<button class="plus-minus-button">-</button>
-								<input type="text" name="children-counter" id="children-counter-field">
-								<button class="plus-minus-button">+</button>
-						</p>
-						<div class="pop-up-submit-button">
-							<input type="submit" name="Find" value="Найти">
-						</div>				
-					</form>
-				</div>
-			</section>
-		</main>
-
-		<section class="map-section">
-			<div class="map-wrapper">
-				<iframe src=""></iframe>
-			</div>
-		</section>
-
-		<footer>
-			<div class="inner-container">
-				<div class="footer-hashtag">
-					<a href="#">#VISITSEDONA</a>
-				</div>
-				<div class="footer-social">
-					<ul class="footer-social-list">
-						<li><a class="footer-social-button social-tw" href="#">Twitter</a></li>
-						<li><a class="footer-social-button social-fb" href="#">Facebook</a></li>
-						<li><a class="footer-social-button social-yt" href="#">Youtube</a></li>
+		<div class="site-container">
+			<header class="index-header">
+				<div class="main-image-section">
+					<!--<div class="header-logo">
+						<a href="#">
+							<img src="#">
+						</a>			
+					</div>-->
+					<nav class="navigation">
+						<ul class="list-navigation">
+							<li><a href="#">ИНФОРМАЦИЯ</a></li>
+							<li><a href="#">ФОТО И ВИДЕО</a></li>
+							<li><a href="#">КАРТА ШТАТА</a></li>
+							<li><a href="#">ГОСТИНИЦЫ</a></li>
+						</ul>
+					</nav>					
+					<section class="intro">
+							<p class="intro-about"><strong>СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ,<br> ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</strong></p>
+							<p class="intro-advantages">РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН</p>	
+					</section>					
+				</div>				
+			</header>
+			<main class="main-index">
+				<section class="adv">
+					<ul class="adv-list">
+						<li class="adv-with-pict">
+								<div class="adv-head-section">
+									<h2 class="adv-head">Настоящий<br>городок</h2>
+								<span class="adv-numb">— №1 —</span>
+								<p class="adv-content">Седона - не атракцион для туристов,<br>там течет своя жизнь</p>			
+								</div>
+								<div class="adv-img-wrapper">
+									<img src="img/index-first-adv.jpg" width="1600" height="800">
+								</div>
+						</li>
+						<li class="adv-with-pict">
+								<div class="adv-img-wrapper">
+									<img src="img/index-second-adv.jpg" width="1600" height="800">
+								</div>
+								<div class="adv-head-section">
+									<h2 class="adv-head">Там есть<br>мост дьявола</h2>
+									<span class="adv-numb">— №2 —</span>
+									<p class="adv-content">Да, по нему можно пройти если конечно<br>вы осмелетесь</p>	
+								</div>						
+						</li>
+						<li class="adv-without-pict">
+							<div class="adv-in-line-section">
+								<div class="adv-head-section">
+									<h2 class="adv-head">Небольшая<br>площадь</h2>
+								</div>
+								<span class="adv-numb">— №3 —</span>
+								<p class="adv-content">Все достопримечательности<br>находятся очень близко</p>					
+							</div>						
+						</li>
+						<li class="adv-without-pict">
+							<div class="adv-in-line-section">
+								<div class="adv-head-section">
+									<h2 class="adv-head">Красивая<br>дорога</h2>
+								</div>
+								<span class="adv-numb">— №4 —</span>
+								<p class="adv-content">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем<br>НЕ СКУЧНО!</p>						
+							</div>						
+						</li>
+						<li class="adv-without-pict">
+							<div class="adv-in-line-section">
+								<div class="adv-head-section"> 
+									<h2 class="adv-head">Мало<br>туристов</h2>
+								</div>
+								<span class="adv-numb">— №5 —</span>
+								<p class="adv-content">Большинство едет в гранд каньон и<br> толпится там</p>						
+							</div>						
+						</li>
+						<li class="adv-about-city">
+								<ul class="adv-about-city-list">
+									<li class="adv-el-wrapper">
+											<h3 class="adv-head">Жилье</h3>
+											<p class="adv-content">Рекомендуем пожить в настоящем<br>мотеле, все как в кино!</p>	
+									</li>
+									<li class="adv-el-wrapper">
+											<h3 class="adv-head">Еда</h3>
+											<p class="adv-content">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР,<br>Вы НЕ разочаруетесь!</p>			
+									</li>
+									<li class="adv-el-wrapper">
+											<h3 class="adv-head">Сувениры</h3>
+											<p class="adv-content">Не только китайского, но и местного<br>производства!</p>		
+									</li>
+								</ul>
+						</li>
 					</ul>
+				</section>
+				<section class="search">
+					<div class="search-content-wrapper">
+						<h2 class="search-head">Заинтересовались?</h2>
+						<p class="search-content">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+					<button class="search-button" type="submit">Поиск гостиницы в седоне</button>		
+					</div>
+					<div class="search-pop-up-container">
+						<form class="pop-up-form">
+							<p class="pop-up-check-in">
+								<label class="pop-up-label">
+									дата заезда
+									<input type="date" name="check-in" id="check-in-date" value="2018-04-24">
+								</label>
+								<span class="calendar-label"></span>
+							</p>
+							<p class="pop-up-check-out">
+								<label class="pop-up-label">
+									дата выезда
+									<input type="date" name="check-out" id="check-out-date" value="2018-06-04">
+								</label>
+								<span class="calendar-label"></span>
+							</p>
+							<p class="pop-up-adult-counter">
+								<label class="pop-up-label" for="adult-counter-field">
+									ВЗРОСЛЫЕ
+								</label>
+									<button class="plus-minus-button">-</button>
+									<input type="text" name="adult-counter" id="adult-counter-field">
+									<button class="plus-minus-button">+</button>
+							</p>
+							<p class="pop-up-children-counter">
+								<label class="pop-up-label" for="children-counter-field">
+									ДЕТИ
+								</label>
+									<button class="plus-minus-button">-</button>
+									<input type="text" name="children-counter" id="children-counter-field">
+									<button class="plus-minus-button">+</button>
+							</p>
+							<div class="pop-up-submit-button">
+								<input type="submit" name="Find" value="Найти">
+							</div>				
+						</form>
+					</div>
+				</section>
+			</main>
+
+			<section class="map-section">
+				<div class="map-wrapper">
+					<iframe src=""></iframe>
 				</div>
-				<div class="footer-copyright-wrapper">
-					<p>WEBSITE BY <a href="#"><img src="#"></a></p>
-				</div>
-			</div>
-		</footer>
+			</section>
+	
+			<footer>
+					<div class="footer-hashtag">
+						<a href="#">#VISITSEDONA</a>
+					</div>
+					<div class="footer-social">
+						<ul class="footer-social-list">
+							<li><a class="footer-social-button social-tw" href="#">Twitter</a></li>
+							<li><a class="footer-social-button social-fb" href="#">Facebook</a></li>
+							<li><a class="footer-social-button social-yt" href="#">Youtube</a></li>
+						</ul>
+					</div>
+					<div class="footer-copyright-wrapper">
+						<p>WEBSITE BY <a href="#"><img src="#"></a></p>
+					</div>
+			</footer>
+		</div>
 	</body>
 </html>

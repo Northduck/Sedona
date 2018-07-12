@@ -1,7 +1,6 @@
 body{
 	margin: 0;
 	padding: 0;
-
 	background-color: #f2f2f2;
 	font-family: 'PT Sans', Arial, sans-serif;
 	font-size: 14px;
@@ -9,17 +8,40 @@ body{
 	line-height: 26px;
 	color: #000000;
 }
+.site-container{
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0;
+	background-color: #ffffff;
+	box-shadow: 0 -5px 15px 0 rgba(0, 0, 0, .2);
+}
 a{
 	text-decoration: none;
 }
 
-.index-header{
-	background-color: white;
-}
 .list-navigation,
 .adv-list,
-.adv-about-city-list{
+.adv-about-city-list,
+.footer-social-list{
 	list-style: none;
+	margin: 0;
+	padding: 0;	
+}
+.list-navigation{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	min-height: 56px;
+	background-color: #ffffff;
+}
+.list-navigation li{
+	flex-basis: 20%;
+	display: flex;
+	justify-content: center;
+}
+.list-navigation li:nth-child(2){
+	margin-right: 20%;
 }
 .list-navigation a{
 	color: black;
@@ -29,65 +51,133 @@ a{
 	color: #81b3d2;
 }
 .list-navigation a:active{
-	color: #000;
+	color: #000000;
     opacity: .3;
 }
 
 .main-image-section{
-	background-image: url("img/bg-main.jpg");
-	background-repeat: none;
-	background-position: center;
-	background-size: cover;
+	min-height: 773px;
+	background-image: url("../img/Welcome.png") ,url("../img/bg-main.jpg");
+	background-repeat: no-repeat;
+	background-position: center 76px, center;
+	background-size: 458px 352px,cover;
+	display: flex;
+	flex-direction: column; 
 }
-
+.intro{
+	background-color: #ffffff;
+	min-height: 216px;
+	margin-top:auto;
+	text-align: center;
+	vertical-align: top;
+}
 .intro-about{
 	font-size: 21px;
 	line-height: 26px;
+	padding-top:40px;
+	padding-bottom: 8px;
 }
 .intro-advantages,
 .adv-in-line-section .adv-content,
 .search-content{
 	color: #333333;
 }
+.adv .adv-list{
+	display: flex;
+	flex-wrap: wrap;
+}
+.adv-with-pict{
+	display: flex;
+	flex-basis: 100%;
+	align-items: center;
+	text-align: center;
+	color: #ffffff;
+}
+.adv-with-pict:first-child{
+	order: -2;
+}
+.adv-with-pict .adv-head-section{
+	min-height: 256px;
+	background-color: #81b3d2;
+	flex-grow: 1;	
+}
+.adv-with-pict .adv-img-wrapper{
+	height: 256px;
+	flex-shrink: 1;	
+	width: 800px;
+	overflow: hidden;
+	object-fit: cover;
+}
+.adv-img-wrapper img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
 .adv-head{
 	font-size: 21px;
 	line-height: 21px;
+	margin: 0;
+	padding-top:46px;
+	margin-bottom:23px;	
 }
-.adv-section{
-	color:white;
+.adv-numb{
+	line-height: 21px;
+	padding: 0;
+	margin: 0;
 }
-.adv-numb,
 .adv-content{
 	line-height: 21px;
-}
-
-.adv-section{
-	width: 400px;
-	height: 256px;
-	background-color: #81b3d2;
+	padding: 0;
+	margin: 0;
+	margin-top: 23px;
 }
 .adv-in-line-section{
-	width: 400px;
-	height: 256px;
-	background-color: #eeeeee;	
+	background-color: #eeeeee;
+	min-height: 256px;
+}
+.adv-without-pict{
+	flex-basis: 33.333333%;
+	text-align: center;
+}
+.adv-about-city{
+	flex-basis: 100%;
+	order: -1;
+}
+.adv-about-city-list{
+	display: flex;
 }
 .adv-el-wrapper{
-	width: 400px;
-	height: 256px;
-	background-color: white;	
+	background-color: white;
+	flex-basis: 33.333333%;
+	text-align: center;				
+}
+.search{
+	min-height: 291px;
+}
+.search-content-wrapper{
+	width: 570px;
+	margin: 0 auto;
+	text-align: center;
 }
 .search-head{
 	font-size: 30px;
 	line-height: 36px;
+	padding: 0;
+	padding-top: 54px;
+	margin: 0;
 }
 .search-content{
 	line-height: 25px;
+	padding: 0;
+	padding-top: 32px;
+	margin: 0;
+	margin-bottom:52px;
 }
 .search-button{
 	font-size: 21px;
 	font-weight: bold;
 	color: white;
-	width: 569px;
+	width: 568px;
 	height: 86px;
 	background-color: #766357;
 }
@@ -103,6 +193,7 @@ a{
 	background-color: white;
 	width: 568px;
 	height: 395px;
+	display: none;
 }
 .pop-up-form input[type="date"]{
 	width: 346px;
@@ -158,6 +249,18 @@ a{
 .pop-up-submit-button input[type="submit"]:active{
 	color: rgba(255, 255, 255, 0.3);
 	background-color: #5496bd;
+}
+.map-section{
+	background-color: red;
+}
+footer{
+	display: flex;
+	align-items: center;
+	background-color: #ffffff;
+	text-align: center;
+}
+footer>div{
+	flex-basis: 33.3333%;
 }
 .footer-hashtag a{
 	font-size: 21px;
