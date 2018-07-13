@@ -22,7 +22,10 @@ a{
 .list-navigation,
 .adv-list,
 .adv-about-city-list,
-.footer-social-list{
+.footer-social-list,
+.filter-infrastructure-list,
+.filter-accommodation-list,
+.finding-sorting{
 	list-style: none;
 	margin: 0;
 	padding: 0;	
@@ -277,6 +280,59 @@ footer>div{
 
 
 /* Hotel*/
+.filter-form{
+	display: flex;
+	justify-content: space-between;
+	min-height: 219px;
+	background-color: black;
+	background-image: url("../img/filter-background.jpg");
+	color: #ffffff;
+}
+.filter-left-part{
+	display: flex;
+	margin-left: 72px;	
+}
+.finding-header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 86px;
+	border-bottom:1px solid #e5e5e5;
+}
+.finding-header-wrapper{
+	margin-left: 72px;
+	display: flex;
+	align-items: baseline;
+}
+.sorting-type{
+	background-color: blue;
+	height: 50px;
+	width: 100px;
+
+}
+.finding-result{
+	line-height: 26px;
+	font-size: 21px;
+	font-weight: bold;
+	margin: 0;
+	margin-right: 49px;
+	padding: 0;		
+}
+.finding-sorting{
+	line-height: 12px;
+	font-size: 18px;	
+	display: flex;
+}
+.finding-sorting li{
+	line-height: 18px;
+	font-size: 12px;	
+}
+.finding-sorting li:first-child{
+	margin-right:39px;	
+}
+.finding-sorting li:not(:first-child){
+	margin-right:33px;	
+}
 .filter-submit-button input[type="submit"]{
 	color: white;
 	width: 137px;
@@ -307,6 +363,16 @@ footer>div{
 	color: black;
 	border-bottom: none;
 }
+.catalog{
+	display: flex;
+	flex-direction: column;
+}
+.catalog-card{
+	display: flex;
+	align-items: center;
+	border-bottom:1px solid #e5e5e5;
+	min-height: 150px;
+}
 .catalog-name-head{
 	font-size: 21px;
 	font-weight: bold;
@@ -318,16 +384,29 @@ footer>div{
 .catalog-name-head:active{
 	color: rgba(255, 255, 255, 0.3);
 }
+.catalog-hotel-type,
+.catalog-price-from{
+	display: block;
+	margin:0;
+	padding: 0;
+
+}
+.buttons-wrapper{
+	display: flex;
+}
 .catalog-about-button{
-	color: white;
+	/*color: white;
 	width: 110px;
 	height: 27px;
-	background-color: #81b3d2;
+	background-color: #81b3d2;*/
 }
-.catalog-about-button a{
-	color: white;	
+.catalog-about-button a,
+.catalog-book-button a{
+	color: white;
+	display: block;	
+	background-color: red;
 }
-.catalog-about-button:hover{
+.catalog-about-button a:hover{
 	background-color: #669ec0;
 
 }
